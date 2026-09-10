@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "IASI: build all extensions",
+      "type": "shell",
+      "command": "bash",
+      "args": ["scripts/build-all.sh"],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "IASI: check generated distributions",
+      "type": "shell",
+      "command": "bash",
+      "args": ["scripts/check-generated.sh"],
+      "problemMatcher": []
+    },
+    {
+      "label": "IASI: test all extensions",
+      "type": "shell",
+      "command": "bash",
+      "args": ["scripts/test-all.sh"],
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+project:
+  type: website
+  resources:
+    - resources/**
+
+profile:
+  default: html
+
+website:
+  title: "IASI Lua Documentation"
+  navbar:
+    title: "IASI"
+    background: primary
+    pinned: true
+    left:
+      - text: "User Guide"
+        href: user-guide/
+      - text: "Technical Guide"
+        href: technical-guide/
+    tools:
+      - icon: translate
+        href: common/manifesto-bilingual.qmd
+        aria-label: "Idioma / Language"
+      - icon: envelope
+        href: common/contact.qmd
+        aria-label: "Contact us"
+      - icon: github
+        href: https://github.com/iasi-org
+        aria-label: "Explore IASI on GitHub"
+
+format:
+  html:
+    include-in-header:
+      - resources/includes/ants.html
+
+execute:
+  freeze: auto
